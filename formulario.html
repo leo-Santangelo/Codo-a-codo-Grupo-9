@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Contacto</title>
+    <link rel="preload" href="normalize.css" as="style" >
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="preload" href="styles.css" as="style" >
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="contenedor__nav">
+            <a class="link_logo" href="index.html">
+                <img class="logo" src="img/KETO-sinfondo.png" alt="ketoimagen">
+            </a>
+            <nav class="menu_nav">
+                <a href="index.html">Home</a>
+                <a href="formulario.html">Contacto</a>
+            </nav>
+        </div>        
+    </header>
+
+    
+    <h1>Formulario de Contacto</h1>
+    <div class="contenedor__formulario">
+    <form class="formulario" id="formulario">
+        <div class="campo">
+            <label class="campolabel" for="nombre">Nombre</label>
+            <input class="campofield" type="text" placeholder="Tu Nombre" id="nombre">
+        </div>
+        <div class="campo">
+            <label class="campolabel" for="email">E-mail</label>
+            <input class="campofield" type="email" placeholder="Tu E-mail" id="email">
+        </div>
+        <div class="campo">
+            <label  class="campolabel" for="pension">¿Pension completa?</label>
+            <input  class="checkbox" type="checkbox" id="pension" value="pension">
+        </div>
+        <div class="contenedor__archivo">
+            <label for="archivo">Adjuntar DNI</label>
+            <input type="file" id="archivo" class="archivo" name="archivo" accept=".jpg , .jpeg">
+        </div>
+
+        <select name="select">
+            <option disabled selected value="">Destino</option>
+            <option value="value1">Mendoza</option>
+            <option value="value2">Bs As</option>
+            <option value="value3">Rosario</option>
+        </select>
+
+        <div class="campo">
+            <label class="campolabel" for="mensaje">Mensaje</label>
+            <textarea class="campofield campo__field--textarea" id="mensaje"></textarea>
+        </div>
+
+        <div class="campo">
+            <input type="submit" value="Enviar" class="boton boton--primario">
+        </div>
+    </form>
+    </div>
+
+
+    <script src="script.js">
+        
+    </script>
+</body>
+
+</html>
